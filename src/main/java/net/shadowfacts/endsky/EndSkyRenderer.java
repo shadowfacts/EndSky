@@ -71,7 +71,7 @@ public class EndSkyRenderer extends IRenderHandler {
 			GlStateManager.popMatrix();
 		}
 
-		GlStateManager.depthMask(true);
+		GlStateManager.depthMask(false);
 		GlStateManager.enableTexture2D();
 		GlStateManager.enableAlpha();
 
@@ -106,7 +106,6 @@ public class EndSkyRenderer extends IRenderHandler {
 		tessellator.draw();
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 		GlStateManager.disableBlend();
-		GlStateManager.enableAlpha();
 		GlStateManager.enableFog();
 		GlStateManager.popMatrix();
 		GlStateManager.enableTexture2D();
