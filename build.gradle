@@ -7,7 +7,7 @@ buildscript {
 		}
 	}
 	dependencies {
-		classpath "net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT"
+		classpath "net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT"
 	}
 }
 
@@ -45,17 +45,6 @@ processResources {
 	}
 }
 
-repositories {
-	maven {
-		name "shadowfacts"
-		url "http://mvn.rx14.co.uk/shadowfacts/"
-	}
-}
-
-dependencies {
-	deobfCompile group: "net.shadowfacts", name: "ShadowMC", version: mc_version + "-" + shadowmc_version
-}
-
 jar {
 	manifest {
 		attributes	"FMLCorePlugin": "net.shadowfacts.endsky.ESPlugin"
@@ -68,7 +57,7 @@ curseforge {
 	project {
 		id = "245816"
 
-		addGameVersion "1.10.2"
+		addGameVersion "1.12"
 		addGameVersion "Java 8"
 
 		mainArtifact(jar) {

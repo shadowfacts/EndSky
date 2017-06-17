@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * @author shadowfacts
  */
-@IFMLLoadingPlugin.MCVersion("1.10.2")
+@IFMLLoadingPlugin.MCVersion("1.12")
 @IFMLLoadingPlugin.Name("EndSky")
 @IFMLLoadingPlugin.SortingIndex(2000)
 public class ESPlugin implements IFMLLoadingPlugin {

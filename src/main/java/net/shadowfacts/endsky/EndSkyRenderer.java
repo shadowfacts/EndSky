@@ -31,7 +31,7 @@ public class EndSkyRenderer extends IRenderHandler {
 		GlStateManager.depthMask(false);
 		textureManager.bindTexture(END_SKY_TEXTURES);
 		Tessellator tessellator = Tessellator.getInstance();
-		VertexBuffer vertexbuffer = tessellator.getBuffer();
+		BufferBuilder vertexbuffer = tessellator.getBuffer();
 
 		for (int i = 0; i < 6; ++i)
 		{
